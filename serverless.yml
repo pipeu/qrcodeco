@@ -1,0 +1,73 @@
+
+
+# The service name
+service: qrcode-pip-client-sls
+
+# provider information
+# we are deploying on aws using the node 10.x runtime.
+provider:
+  name: aws
+  endpointType: REGIONAL
+  runtime: nodejs10.x
+
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-west-2'}
+
+  memorySize: 2048
+  timeout: 30
+
+  environment:
+    stage: ${self:custom.stage}
+    AWS_REGION_NAME: ${self:custom.region}
+    storeUrl: ${self:custom.storeUrl.${self:custom.stage}}
+    version: '0.0.1'
+
+functions:
+  app:
+    handler: lambda.nuxt
+    memorySize: 2048
+    timeout: 30
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}
+
+      # Add those plugins to our service
+plugins:
+  - serverless-offline
+  - serverless-apigw-binary
+  - serverless-stage-manager
+#  - serverless-domain-manager
+
+custom:
+
+  region: ${opt:region, self:provider.region}
+  stage: ${opt:stage, self:provider.stage}
+  stages: # for stage manager
+    - test
+    - dev
+    - staging
+    - prod
+
+  storeUrl:
+    prod: "qrcode.co"
+    dev: "dev-qrcode.co"
+
+
+#  02/08/2020 - Not using custom domains on AWS API GATEWAY DUE TO THE MISSING FUNCTIONALITY TO REDIREC HTTP TO HTTPS :(
+#  We are using CloudFront to do that and attached API GATEWAY DIRECTLY ON CLOUDFORMATION AS ORIGIN
+
+#  domains:
+#    prod: coze.com.br
+#    staging: staging.coze.com.br
+#    dev: dev.coze.com.br
+
+#  customDomain:
+#    domainName: ${self:custom.domains.${self:custom.stage}}
+#    stage: "${self:custom.stage}"
+#    createRoute53Record: true
+#    endpointType: 'regional'
+
+
+  apigwBinary:
+    types:
+      - "*/*"

@@ -1,0 +1,1273 @@
+/* Base PipeU CSS */
+
+@charset "UTF-8";
+/* CSS Document */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+
+a {
+  color: #C83B6B;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(72, 72, 72) !important;
+  font-weight: 300 !important;
+  margin-top: 0px !important;
+}
+
+
+.pip-text-paragraph p {
+  font-family: Cereal,Helvetica,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  color: #484848;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.pip-text-paragraph {
+  font-family: Cereal,Helvetica,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  color: #484848;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+.pip-text-title h1 {
+  font-weight: 800 !important;
+  margin-bottom: 0px !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+.pip-text-title {
+  font-weight: 800 !important;
+  margin-bottom: 0px !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+}
+
+.pip-text p {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+}
+
+.pip-text {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  font-weight: normal !important;
+  margin-top: 0px !important;
+}
+
+
+nav {
+  background-color: #002c4b;
+  z-index: 1000;
+}
+nav .nav-title {
+  display: inline-block;
+  font-size: 18px;
+  padding: 19px 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.pip-container-full {
+  margin: 0 auto;
+  margin: 0 20px;
+}
+.pip-awesome {
+  font-size: 18px;
+  margin-left: 3px;
+}
+.pip-bg {
+  background-color: #f8f8f8;
+}
+
+.pip-event {
+  /*padding-bottom: 80px;*/
+}
+
+.pip-event .cover img {
+  width: 100%;
+  max-height: 600px;
+}
+.pip-event .summary {
+  text-align: center;
+  padding: 20px 0;
+}
+.pip-event .summary h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.pip-event .summary p {
+  margin-bottom: 10px;
+  color: #999;
+}
+.pip-event .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px
+}
+
+.pip-event .buy {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+}
+
+.pip-event h2 {
+  font-size: 24px;
+  padding: 20px 0;
+}
+.pip-event .description p {
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.pip-event .speakers, .pip-event .schedule, .pip-event .description, .pip-event .summary, .pip-event .location, .pip-event .ticket, .pip-event .organizer {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+.pip-event .speakers a {
+  color: inherit;
+}
+.pip-event .speakers .col {
+  text-align: center;
+  padding: 10px;
+  min-height: 220px;
+}
+.pip-event .speakers img {
+  border-radius: 50%;
+  width: 100%;
+}
+.pip-event .speakers h6 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.pip-event .speakers p {
+  color: #999;
+}
+.pip-event .location p {
+  margin-bottom: 20px;
+}
+.pip-event .sponsors img {
+  width: 100%;
+}
+.pip-event .sponsors h3 {
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #999;
+}
+.pip-event .schedule {
+  border-bottom: none;
+}
+.pip-event .schedule .col {
+  padding: 0;
+}
+.pip-event .schedule .tabs {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.pip-event .schedule .tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #0085f7;
+  will-change: left, right;
+}
+.pip-event .schedule .tabs .tab {
+  display: inline-block;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+}
+.pip-event .schedule .tabs .tab a {
+  color: #0085f7;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color .28s ease, background-color .28s ease;
+  transition: color .28s ease, background-color .28s ease;
+}
+.pip-event .schedule .tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgba(0,130,250,0.05);
+  outline: none;
+}
+.pip-event .schedule .hour .row {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.pip-event .schedule .hour img {
+  border-radius: 50%;
+  width: 50px;
+}
+.pip-event .schedule .hour h5 {
+  font-weight: 600;
+  margin-top: 20px;
+}
+.pip-event .schedule .hour h6 {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.pip-event .schedule .hour p {
+  line-height: 20px;
+  color: #999;
+}
+.pip-event .ticket .card {
+  padding: 20px;
+}
+.pip-event .ticket .card h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+.pip-event .ticket .card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.pip-event .ticket .card p {
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.pip-account .row {
+  margin: 0;
+}
+.pip-account .infos {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.pip-account .infos img {
+  border-radius: 50%;
+  width: 100%;
+}
+.pip-account .infos h6 {
+  font-size: 17px;
+  margin: 5px 0;
+}
+.pip-account .infos p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #999;
+  margin-bottom: 20px;
+}
+.pip-account .collection {
+  margin-bottom: 0;
+  border: none;
+  overflow: hidden;
+  position: relative;
+}
+.pip-account .collection a.collection-item:not(.active):hover {
+  background-color: #f8f8f8;
+}
+.pip-account .collection a.collection-item {
+  display: block;
+  -webkit-transition: .25s;
+  transition: .25s;
+  color: #505050;
+}
+.pip-account .collection .collection-item {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+.pip-account .collection h6 {
+  padding: 0 20px;
+  margin: 10px 0;
+  color: #999;
+  font-size: 14px;
+}
+.pip-account .collection.section .btn {
+  margin: 20px 0
+}
+.pip-account .collection.section div {
+  padding: 0 20px;
+}
+.pip-account .buy {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+}
+.pip-account .buy .btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #C83B6B;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 100%
+}
+.pip-account .input-field .prefix.active {
+  color: #c83b6b;
+}
+/* label focus color */
+.pip-account .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #c83b6b !important;
+}
+/* label underline focus color */
+.pip-account .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #c83b6b !important;
+  box-shadow: 0 1px 0 0 #c83b6b !important;
+}
+.pip-account .input-field .prefix {
+  position: absolute;
+  width: 3rem;
+  font-size: 1.5rem;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  top: .5rem;
+}
+.pip-account [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+  background-color: #c83b6b;
+}
+.pip-account [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  border: 2px solid #c83b6b;
+}
+
+
+.pip-account .dropdown-content li>a, .dropdown-content li>span {
+  color: #505050;
+}
+.pip-account .card-edit img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px
+}
+.pip-account .secondary-content {
+  float: right;
+  color: #c83b6b;
+  margin-left: 30px;
+}
+.pip-account .notification h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.pip-account .notification p {
+  margin-bottom: 10px;
+  line-height: 18px;
+  color: #999;
+}
+.pip-account .notification .switch label input[type=checkbox]:checked+.lever {
+  background-color: #ffa2c2;
+}
+.pip-account .notification .switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #c83b6b;
+}
+.pip-account .notification .switch label input[type=checkbox][disabled]+.lever:after, .switch label input[type=checkbox][disabled]:checked+.lever:after {
+  background-color: #dfdfdf;
+}
+.pip-account .flags {
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+.pip-account .modal h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.pip-account .modal p {
+  color: #999;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.pip-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #999;
+}
+.pip-empty h1>.material-icons {
+  font-size: 50px;
+  width: 100%;
+}
+.pip-account .favorites {
+  padding: 0 20px;
+}
+.pip-account .favorites .row {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.pip-account .favorites .row .col {
+  padding: 0;
+}
+.pip-account .favorites .cover img {
+  width: 100%;
+}
+.pip-account .favorites .summary {
+  padding: 0 0 0 10px;
+}
+.pip-account .favorites .summary h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.pip-account .favorites .summary p {
+  margin-bottom: 10px;
+  color: #999;
+  line-height: 18px;
+  font-size: 12px;
+}
+.pip-account .favorites .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px
+}
+.pip-account .favorites .row .col .favorite .material-icons {
+  color: #ccc;
+}
+.pip-account .row .col .favorite .material-icons.active {
+  color: #c83b6b;
+}
+.pip-tickets {
+  margin-top: 5px;
+}
+.pip-tickets .tabs {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.pip-tickets .tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #0085f7;
+  will-change: left, right;
+}
+.pip-tickets .tabs .tab {
+  display: inline-block;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+}
+.pip-tickets .tabs .tab a {
+  color: #0085f7;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color .28s ease, background-color .28s ease;
+  transition: color .28s ease, background-color .28s ease;
+}
+.pip-tickets .tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgba(0,130,250,0.05);
+  outline: none;
+}
+.pip-tickets .tickets-on .row {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+.pip-tickets .tickets-on .row .col {
+  padding: 0;
+}
+.pip-tickets .tickets-on .cover img {
+  width: 100%;
+}
+.pip-tickets .tickets-on .summary {
+  padding: 0 0 0 10px;
+}
+.pip-tickets .tickets-on .summary h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.pip-tickets .tickets-on .summary p {
+  margin-bottom: 10px;
+  color: #999;
+  line-height: 18px;
+  font-size: 12px;
+}
+.pip-tickets .tickets-on .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px
+}
+.pip-tickets .tickets-on .date {
+  text-align: center;
+}
+.pip-tickets .tickets-on .date h6 {
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.pip-tickets .tickets-on .date h5 {
+  font-size: 24px
+}
+.pip-tickets .tickets-on a {
+  color: inherit;
+}
+.pip-tickets .tickets-on .summary p>a {
+  color: #0085f7;
+}
+.pip-tickets .tickets-off .row {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+  opacity: 4;
+}
+.pip-tickets .tickets-off .row .col {
+  padding: 0;
+  opacity: 4;
+}
+.pip-tickets .tickets-off .cover img {
+  width: 100%;
+  opacity: 0.4;
+}
+.pip-tickets .tickets-off .summary {
+  padding: 0 0 0 10px;
+  opacity: 4;
+}
+.pip-tickets .tickets-off .summary h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.pip-tickets .tickets-off .summary p {
+  margin-bottom: 10px;
+  color: #999;
+  line-height: 18px;
+  font-size: 12px;
+  opacity: 0.4;
+}
+.pip-tickets .tickets-off .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px;
+  opacity: 4;
+}
+.pip-tickets .tickets-off .date {
+  text-align: center;
+  opacity: 4;
+}
+.pip-tickets .tickets-off .date h6 {
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.pip-tickets .tickets-off .date h5 {
+  font-size: 24px;
+  opacity: 0.5;
+}
+.pip-tickets .tickets-off a {
+  color: inherit;
+}
+.pipeu-tickets .order {
+  padding: 10px;
+}
+.pipeu-tickets .order .card {
+  padding: 10px;
+}
+.pip-tickets .order {
+  padding: 0 10px;
+}
+.pip-tickets .order a {
+  color: #0085f7;
+}
+.pip-tickets .order .row {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+.pip-tickets .order .row .col {
+  padding: 5px 0;
+}
+.pip-tickets .order .card .cover img {
+  width: 100%;
+}
+.pip-tickets .order .summary {
+  padding: 0 0 0 10px;
+}
+.pip-tickets .order .summary h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.pip-tickets .order .summary p {
+  margin-bottom: 10px;
+  color: #999;
+  line-height: 18px;
+}
+.pip-tickets .order .summary p>a {
+  color: #0085f7;
+}
+.pip-tickets .order .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.pip-tickets .order h2 {
+  color: #999;
+  margin-bottom: 5px;
+}
+.pip-tickets .order .qr p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pip-tickets .order .qr a {
+  color: inherit;
+}
+.pip-tickets .order .qr .material-icons {
+  color: #339933;
+  font-size: 46px;
+  padding: 30px;
+}
+
+
+
+.pip-active {
+  padding: 20px;
+}
+.pip-active h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.pip-active h6 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.pip-active p {
+  margin-bottom: 50px;
+  line-height: 18px;
+}
+.pip-active p strong {
+  font-weight: bold;
+}
+.pip-active .verify {
+  color: #c83b6b;
+  font-style: italic;
+  font-size: 16px;
+}
+.pip-active li {
+  padding: 20px 0;
+}
+.pip-active li a {
+  color: #0085f7;
+}
+.pip-splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.pip-login .logo {
+  text-align: center;
+  padding: 0;
+}
+.pip-login .account {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 0;
+}
+.pip-login .account a {
+  color: #0085f7;
+  font-size: 16px;
+}
+.pip-login .account strong {
+  font-weight: bold;
+}
+.pip-login .input-field .prefix.active {
+  color: #c83b6b;
+}
+/* label focus color */
+.pip-login .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #c83b6b !important;
+}
+/* label underline focus color */
+.pip-login .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #c83b6b !important;
+  box-shadow: 0 1px 0 0 #c83b6b !important;
+}
+.pip-login .input-field .prefix {
+  position: absolute;
+  width: 3rem;
+  font-size: 1.5rem;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  top: .5rem;
+}
+
+
+.pip-login .row {
+  padding: 0;
+  margin: 0
+}
+.pip-login .pass {
+  text-align: center;
+  color: #c83b6b;
+  padding: 30px 0;
+}
+.pip-login .pass a {
+  text-align: center;
+  color: #c83b6b;
+}
+.pip-login h1 {
+  font-size: 24px;
+  margin: 40px 0 10px;
+  text-align: center;
+  padding: 0 20px;
+}
+.pip-login p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #999;
+  padding: 0 20px;
+}
+.pip-login .back {
+  padding: 20px 0 0 20px;
+}
+.pip-login .back a {
+  color: #c83b6b;
+}
+.pip-login .terms {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  line-height: 18px;
+  font-size: 12px;
+}
+.pip-login .terms a {
+  text-align: center;
+  color: #c83b6b;
+}
+.pip-modal h1 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.pip-modal p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+.pip-modal .btn-flat {
+  color: #c83b6b;
+}
+.pip-events {
+  margin-top: 5px;
+}
+.pip-events .tabs {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.pip-events .tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #0085f7;
+  will-change: left, right;
+}
+.pip-events .tabs .tab {
+  display: inline-block;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  text-transform: none;
+}
+.pip-events .tabs .tab a {
+  color: #0085f7;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: color .28s ease, background-color .28s ease;
+  transition: color .28s ease, background-color .28s ease;
+}
+.pip-events .tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: rgba(0,130,250,0.05);
+  outline: none;
+}
+.pip-events .btn-floating {
+  background-color: #c83b6b;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.pip-events .timeline {
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee
+}
+.pip-events .timeline .active {
+  color: #0085f7;
+}
+.pip-events h6 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.pip-events .events-on .row {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+.pip-events .events-on .row .col {
+  padding: 0;
+}
+.pip-events .events-on .cover img {
+  width: 100%;
+}
+.pip-events .events-on .summary {
+  padding: 0 0 0 10px;
+}
+.pip-events .events-on .summary h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.pip-events .events-on .summary p {
+  margin-bottom: 10px;
+  color: #999;
+  line-height: 18px;
+  font-size: 12px;
+}
+.pip-events .events-on .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px
+}
+.pip-events .events-on .date {
+  text-align: center;
+}
+.pip-events .events-on .date h6 {
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px
+}
+.pip-events .events-on .date h5 {
+  font-size: 18px
+}
+.pip-events .events-on a {
+  color: inherit;
+}
+.pip-events .events-on .summary p>a {
+  color: #0085f7;
+}
+.pip-events .events-off .row {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+  opacity: 4;
+}
+.pip-events .events-off .row .col {
+  padding: 0;
+  opacity: 4;
+}
+.pip-events .events-off .cover img {
+  width: 100%;
+  opacity: 0.4;
+}
+.pip-events .events-off .summary {
+  padding: 0 0 0 10px;
+  opacity: 4;
+}
+.pip-events .events-off .summary h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.pip-events .events-off .summary p {
+  margin-bottom: 10px;
+  color: #999;
+  line-height: 18px;
+  font-size: 12px;
+  opacity: 0.4;
+}
+.pip-events .events-off .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px;
+  opacity: 4;
+}
+.pip-events .events-off .date {
+  text-align: center;
+  opacity: 4;
+}
+.pip-tickets .events-off .date h6 {
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  font-size: 12px;
+}
+.pip-events .events-off .date h5 {
+  font-size: 18px;
+  opacity: 0.5;
+}
+.pip-events .tickets-off a {
+  color: inherit;
+}
+.pip-event .latest h1 {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 15px;
+}
+.pip-event .latest h1>span {
+  font-size: 14px;
+  font-weight: 300;
+  float: right;
+}
+.pip-event .latest h2 {
+  margin: 0;
+  font-size: 18px;
+  padding: 10px;
+}
+.pip-buy-tickets {
+  margin-top: 20px;
+  padding-bottom: 80px;
+}
+.pip-buy-tickets h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.pip-buy-tickets .ingress {
+
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.pip-buy-tickets .ingress.active {
+  border-left: 2px solid #0085f7;
+}
+.pip-buy-tickets .ingress h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+
+}
+.pip-buy-tickets .ingress h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.pip-buy-tickets .ingress p {
+  margin-bottom: 30px;
+  color: #999;
+}
+.pip-buy-tickets .ingress .quantity .material-icons {
+  vertical-align: middle;
+}
+.pip-buy-tickets .ingress .quantity .number {
+  padding: 0 20px;
+  font-size: 18px;
+}
+.pip-buy-tickets .row {
+  margin: 0;
+}
+.pip-buy-tickets .ingress .col {
+  padding: 0;
+}
+.pip-buy-tickets .ingress a {
+  color: #c83b6b;
+}
+.pip-buy-tickets .ingress td {
+  padding: 20px 0;
+}
+.pip-buy-tickets .ingress tr {
+  border-bottom: 1px solid #eee;
+}
+.pip-buy-tickets .ingress strong {
+  font-weight: bold;
+}
+.pip-buy-tickets .ingress .qr p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.pip-buy-tickets .ingress .qr a {
+  color: inherit;
+}
+.pip-buy-tickets .ingress .qr .material-icons {
+  color: #339933;
+  font-size: 46px;
+  padding: 30px;
+}
+
+.pip-buy-tickets .ingress .summary {
+  text-align: center;
+
+}
+.pip-buy-tickets .ingress .summary h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.pip-buy-tickets .ingress .summary p {
+  margin-bottom: 10px;
+  color: #999;
+}
+.pip-buy-tickets .ingress .summary .material-icons {
+  vertical-align: bottom;
+  font-size: 14px;
+  margin-right: 5px
+}
+.pip-buy-tickets .ingress.qr p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #505050;
+}
+.pip-buy-tickets .ingress.qr h2 {
+  color: #999;
+  margin-bottom: 5px;
+  font-size: 14px;
+
+}
+.pip-buy-tickets .ingress.qr a {
+  color: inherit;
+}
+.pip-buy-tickets .feedback {
+  padding:  0 0 40px 0
+}
+.pip-buy-tickets .feedback h2 {
+  color: #393;
+  font-size: 16px;
+}
+.pip-buy-tickets .feedback .material-icons {
+  color: #393;
+  font-size: 50px;
+}
+.pip-hidden {
+  display: none;
+}
+.pip-hidden-m {
+  display: block;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .pip-container {
+    margin: auto;
+    max-width: 1200px;
+    /*padding: 50px;*/
+    margin-top: 50px;
+  }
+
+  .pip-hidden {
+    display: block;
+  }
+  .pip-hidden-m {
+    display: none;
+  }
+  .pip-account .buy a {
+    max-width: 600px;
+  }
+  .pip-event .cover {
+    margin: -50px -50px 0;
+  }
+  body {
+    background-color: #f8f8f8;
+  }
+  .order .card {
+    box-shadow: none;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  nav a.sidenav-trigger {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav .brand-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+/*Store Css Customization*/
+.store-primary-color {
+  color: #ff2f38;
+}
+.store-primary-button-color {
+  color: #ff2f38;
+}
+
+
+
+ .pip-button-regular {
+   text-decoration: none;
+   color: #fff;
+   background-color: #0085f7;
+   text-align: center;
+   letter-spacing: .5px;
+   -webkit-transition: background-color .2s ease-out;
+   transition: background-color .2s ease-out;
+   cursor: pointer;
+   /*border-radius: 50px;*/
+   /*width: 100%;*/
+   text-transform: none;
+ }
+.pip-button-regular:hover {
+  background-color: #0085f7;
+}
+
+.class-teste a {
+  color: #ffffff;
+}
+
+.pip-button btn-large {
+  font-size: 15px;
+}
+
+.pip-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0085f7;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 100%;
+  text-transform: none;
+}
+.pip-button:hover {
+  background-color: #0085f7;
+}
+
+
+.button-container {
+  padding-bottom: 80px;
+}
+
+.button-container .fixed-button {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+
+  /*max-width: 600px;*/
+}
+
+.button-container .fixed-button .btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0085f7;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 100%;
+  text-transform: none;
+}
+
+
+.btn-outline {
+  text-decoration: none;
+  color: #0085f7;
+  background-color: #fff;
+  text-align: center;
+  letter-spacing: 0.2px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 100%;
+  border: 1px solid #0085f7;
+  box-shadow: none;
+}

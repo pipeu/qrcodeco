@@ -1,0 +1,11 @@
+# prod
+sls deploy
+
+# dev
+sls deploy --stage dev --region us-west-2
+
+# prod
+yarn build && sls deploy --stage prod --region us-east-1
+
+# prod
+sls logs -f app -t --stage prod --region us-east-1

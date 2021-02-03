@@ -1,0 +1,5 @@
+fb pixel events
+https://www.facebook.com/business/help/402791146561655?id=1205376682832142
+
+seo micro-data
+https://developers.facebook.com/docs/marketing-api/catalog/guides/microdata-tags
