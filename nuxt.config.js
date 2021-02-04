@@ -48,8 +48,8 @@ module.exports = {
     PIPEU_COMMUNICATIONS_API_URL: 'https://07jeokz8u3.execute-api.us-east-1.amazonaws.com/prod/communications',
 
     // Dev Pipeu LocalHost - for tests
-    DEV_PIPEU_API_URL: 'http://localhost/rest/api/1.0',
-    // DEV_PIPEU_API_URL: 'https://pipeu.com.br/rest/api/1.0',
+    // DEV_PIPEU_API_URL: 'http://localhost/rest/api/1.0',
+    DEV_PIPEU_API_URL: 'https://pipeu.com.br/rest/api/1.0',
 
     DEVELOPMENT_STORE_DOMAIN: 'qrcode.co'
   },
