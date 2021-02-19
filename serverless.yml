@@ -30,6 +30,13 @@ functions:
     events:
       - http: ANY /
       - http: ANY /{proxy+}
+      - schedule:
+          name: qrcodeco-warmer-schedule
+          rate: rate(5 minutes)
+          enabled: true
+          input:
+            warmer: true
+            concurrency: 1
 
       # Add those plugins to our service
 plugins:
