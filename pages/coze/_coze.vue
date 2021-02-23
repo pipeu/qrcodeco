@@ -32,6 +32,9 @@ export default {
 
   middleware ({ redirect }) {
     console.log('middleware redirecting to coze.com.br')
+
+    // Call API here
+
     return redirect('https://coze.com.br');
   },
 
