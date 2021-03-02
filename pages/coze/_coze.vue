@@ -7,6 +7,7 @@
 
 <script>
 import {mapGetters} from 'vuex'
+import axios from 'axios'
 
 export default {
   name: 'coze',
@@ -30,11 +31,22 @@ export default {
     ...mapGetters(['getStore', 'getUserAccount', 'getDomain', 'getProductsByDetailPageURL', 'getPageByAliasCodeUrl'])
   },
 
-  middleware ({ redirect }) {
+  async middleware ({ redirect }) {
+    console.log('middleware coze.com.br, calling api.qrcode to compute scan and then redirect...')
+
+    try {
+      let payload = {
+        code: "https://qrcode.co/coze/loja",
+        store_id: 100,
+        store_name: "qrcodeco"
+      }
+      let {data} = await axios.put('https://api.qrcode.co/scan/increment', payload, {headers: {'Content-Type': 'application/json'}})
+      console.log('response from increment scan', data)
+    }catch (e) {
+      console.log('error computing scan, continue...')
+    }
+
     console.log('middleware redirecting to coze.com.br')
-
-    // Call API here
-
     return redirect('https://coze.com.br');
   },
 
